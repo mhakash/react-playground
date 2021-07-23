@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "../components/Slide";
 
-const items = ["#333", "#555", "#777", "#999", "#aaa", "#ccc"];
+const items = ["#555", "#777", "#999", "#aaa", "#ccc"];
 
 const SlidePage = () => {
   return (

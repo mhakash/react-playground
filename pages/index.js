@@ -9,7 +9,9 @@ export default function Home({ playgrounds }) {
         {playgrounds.map((e) => (
           <li key={e.name} className="mb-1 text-sm">
             <Link href={`/${e.name}`}>
-              <a className="text-gray-800 hover:text-blue-800">{e.title}</a>
+              <a className="text-gray-800 hover:text-blue-800 hover:underline">
+                {e.title}
+              </a>
             </Link>
           </li>
         ))}

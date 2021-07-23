@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
 
       <div className="w-full p-4 mb-2">
         <Link href="/">
-          <a className="text-lg font-bold my-2 text-gray-700">
+          <a className="text-lg font-bold my-2 text-gray-700 hover:text-gray-800 hover:underline">
             React Playground
           </a>
         </Link>

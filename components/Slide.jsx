@@ -36,8 +36,8 @@ const Slider = ({ children }) => {
             key={e}
             onClick={() => setActive(e)}
             className={classes([
-              "mx-1 w-4 h-4 border-2 bg-gray-600 rounded-full",
-              e === active ? "border-black" : "",
+              "mx-1 w-4 h-4 border-2 bg-gray-500 rounded-full",
+              e === active ? "border-gray-800" : "",
             ])}
           ></button>
         ))}
@@ -45,9 +45,9 @@ const Slider = ({ children }) => {
 
       <button
         className={classes([
-          "mr-2 left-4",
-          "p-1 bg-gray-400 rounded-full border-2 border-gray-300 absolute top-1/2",
-          active === 0 ? "cursor-not-allowed" : "hover:bg-gray-500",
+          "mr-2 left-1 md:left-4",
+          "p-1 bg-gray-400 rounded-full border shadow-md border-gray-300 absolute top-1/2",
+          active === 0 ? "cursor-not-allowed" : "hover:bg-gray-300",
         ])}
         onClick={handleBack}
       >
@@ -56,9 +56,9 @@ const Slider = ({ children }) => {
 
       <button
         className={classes([
-          "ml-2 right-4",
-          "p-1 bg-gray-400 rounded-full border-2 border-gray-300 absolute top-1/2",
-          active === length - 1 ? "cursor-not-allowed" : "hover:bg-gray-500",
+          "ml-2 right-1 md:right-4",
+          "p-1 bg-gray-400 rounded-full border border-gray-300 shadow-md absolute top-1/2",
+          active === length - 1 ? "cursor-not-allowed" : "hover:bg-gray-300",
         ])}
         onClick={handleFront}
       >

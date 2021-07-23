@@ -1,7 +1,7 @@
 import React from "react";
-import Loading1 from "/components/icons/Loading1";
-import Loading2 from "/components/icons/Loading2";
-import Loading3 from "/components/icons/Loading3";
+import Loading1 from "../components/icons/Loading1";
+import Loading2 from "../components/icons/Loading2";
+import Loading3 from "../components/icons/Loading3";
 
 const Loading = () => {
   return (

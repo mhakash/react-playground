@@ -1,6 +1,6 @@
 import React from "react";
 import { classes } from "../utils";
-import XIcon from "./icons/XIcon";
+import XIcon from "./Icons/XIcon";
 
 const Modal = ({ visible = false, children, setVisible }) => {
   return (

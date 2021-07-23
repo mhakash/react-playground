@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { classes } from "../utils";
-import BackArrow from "./icons/BackArrow";
+import BackArrow from "./Icons/BackArrow";
 
 const Slider = ({ children }) => {
   const childrens = Array.isArray(children) ? children : [children];

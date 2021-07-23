@@ -1,8 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
+import GithubIcon from "../components/Icons/Github";
+import { useRouter } from "next/router";
+
+const githubBaseURL = "https://github.com/mhakash/react-playground";
 
 const Layout = ({ children }) => {
+  const router = useRouter();
+  const filePath = router.asPath === "/" ? "/index.js" : router.asPath + ".js";
+
   return (
     <div className="flex flex-col min-h-screen items-center text-gray-800 bg">
       <Head>
@@ -20,8 +27,15 @@ const Layout = ({ children }) => {
 
       <div className="flex-1 w-full">{children}</div>
 
+      <a
+        className="flex justify-center items-center mt-2"
+        href={githubBaseURL + "/blob/main/pages" + filePath}
+      >
+        <GithubIcon className="w-6 h-6 mr-2" />
+        <div>Edit this Page</div>
+      </a>
       <div className="text-sm mt-4 p-4 bg-gradient-to-r from-gray-700 to-gray-800 w-full text-gray-100 text-center">
-        React playgroud 2021
+        <div>React playgroud 2021</div>
       </div>
 
       <style jsx>{`

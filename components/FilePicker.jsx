@@ -27,7 +27,7 @@ const FilePicker = ({ setFile, file }) => {
         <input
           type="file"
           className="hidden"
-          multiple={false}
+          multiple={true}
           onChange={(e) => setFile([...e.target.files])}
         />
         <div className="w-96 h-48 rounded-md max-w-full flex flex-col justify-center items-center m-auto border-gray-800 border  cursor-pointer">

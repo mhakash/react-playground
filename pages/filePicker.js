@@ -5,7 +5,7 @@ const FilePickerPage = () => {
   const [file, setFile] = useState([]);
 
   return (
-    <div className="my-8 text-center">
+    <div className="my-8 text-center m-1">
       <div className="mb-4">File Picker</div>
       <FilePicker file={file} setFile={setFile} />
       {file && (

@@ -3,7 +3,6 @@ import Link from "next/link";
 import Head from "next/head";
 import GithubIcon from "./Icons/Github";
 import { useRouter } from "next/router";
-import Customizer from "./Customizer";
 
 const githubBaseURL = "https://github.com/mhakash/react-playground";
 

@@ -1,4 +1,4 @@
-const GithubIcon = ({ className, fill }) => (
+const GithubIcon = ({ className }) => (
   <svg
     className={className}
     height="32"

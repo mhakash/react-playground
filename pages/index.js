@@ -8,10 +8,11 @@ export default function Home({ playgrounds }) {
       <ul className=" list-disc list-inside">
         {playgrounds.map((e) => (
           <li key={e.name} className="mb-1 text-sm">
-            <Link href={`/${e.name}`}>
-              <a className="text-gray-800 hover:text-blue-800 hover:underline">
-                {e.title}
-              </a>
+            <Link
+              href={`/${e.name}`}
+              className="text-gray-800 hover:text-blue-800 hover:underline"
+            >
+              {e.title}
             </Link>
           </li>
         ))}
